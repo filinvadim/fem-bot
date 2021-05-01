@@ -1,0 +1,6 @@
+# github.com/Syfaro/telegram-bot-api v4.6.4+incompatible
+## explicit
+github.com/Syfaro/telegram-bot-api
+# github.com/technoweenie/multipartstreamer v1.0.1
+## explicit
+github.com/technoweenie/multipartstreamer
