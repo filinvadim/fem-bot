@@ -1,1 +1,1 @@
-web: ./bin/fem-bot
+worker: ./bin/fem-bot
