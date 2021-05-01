@@ -49,7 +49,7 @@ func main() {
 		if update.Message.NewChatMembers != nil {
 			var newbies = make([]string, 0)
 			for _, mem := range *update.Message.NewChatMembers {
-				newbies = append(newbies, mem.UserName)
+				newbies = append(newbies, "@"+mem.UserName)
 			}
 			text = fmt.Sprintf("Привет %s! %s\n", strings.Join(newbies, ","), newbiesGreeting)
 
