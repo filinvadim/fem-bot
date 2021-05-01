@@ -57,7 +57,9 @@ func main() {
 		if update.Message.LeftChatMember != nil {
 			text = fmt.Sprintf("%s покинул/покинула чат.\n", update.Message.LeftChatMember.UserName)
 		}
-		msg := api.NewMessage(update.Message.Chat.ID, text)
-		bot.Send(msg)
+		if text != "" {
+			msg := api.NewMessage(update.Message.Chat.ID, text)
+			bot.Send(msg)
+		}
 	}
 }
